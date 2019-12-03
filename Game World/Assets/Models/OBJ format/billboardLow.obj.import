@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/billboardLow.obj-1d7038e08610c4f4175efc2537b4caf9.mesh"
+
+[deps]
+
+files=[ "res://.import/billboardLow.obj-1d7038e08610c4f4175efc2537b4caf9.mesh" ]
+
+source_file="res://Assets/Models/OBJ format/billboardLow.obj"
+dest_files=[ "res://.import/billboardLow.obj-1d7038e08610c4f4175efc2537b4caf9.mesh", "res://.import/billboardLow.obj-1d7038e08610c4f4175efc2537b4caf9.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

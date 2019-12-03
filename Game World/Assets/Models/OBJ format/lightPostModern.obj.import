@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/lightPostModern.obj-9767f42885684eb0e739828427f4e04d.mesh"
+
+[deps]
+
+files=[ "res://.import/lightPostModern.obj-9767f42885684eb0e739828427f4e04d.mesh" ]
+
+source_file="res://Assets/Models/OBJ format/lightPostModern.obj"
+dest_files=[ "res://.import/lightPostModern.obj-9767f42885684eb0e739828427f4e04d.mesh", "res://.import/lightPostModern.obj-9767f42885684eb0e739828427f4e04d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

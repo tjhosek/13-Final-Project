@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/pitsOfficeRoof.obj-4896594c6f009400dd78036ce25237cd.mesh"
+
+[deps]
+
+files=[ "res://.import/pitsOfficeRoof.obj-4896594c6f009400dd78036ce25237cd.mesh" ]
+
+source_file="res://Assets/Models/OBJ format/pitsOfficeRoof.obj"
+dest_files=[ "res://.import/pitsOfficeRoof.obj-4896594c6f009400dd78036ce25237cd.mesh", "res://.import/pitsOfficeRoof.obj-4896594c6f009400dd78036ce25237cd.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

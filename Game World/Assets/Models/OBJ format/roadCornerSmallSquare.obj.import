@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/roadCornerSmallSquare.obj-edeb9ddb66d86cb65c219630e15b1082.mesh"
+
+[deps]
+
+files=[ "res://.import/roadCornerSmallSquare.obj-edeb9ddb66d86cb65c219630e15b1082.mesh" ]
+
+source_file="res://Assets/Models/OBJ format/roadCornerSmallSquare.obj"
+dest_files=[ "res://.import/roadCornerSmallSquare.obj-edeb9ddb66d86cb65c219630e15b1082.mesh", "res://.import/roadCornerSmallSquare.obj-edeb9ddb66d86cb65c219630e15b1082.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

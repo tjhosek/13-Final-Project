@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/overheadRoundColored.obj-14780679430cef95d018084f5b70d000.mesh"
+
+[deps]
+
+files=[ "res://.import/overheadRoundColored.obj-14780679430cef95d018084f5b70d000.mesh" ]
+
+source_file="res://Assets/Models/OBJ format/overheadRoundColored.obj"
+dest_files=[ "res://.import/overheadRoundColored.obj-14780679430cef95d018084f5b70d000.mesh", "res://.import/overheadRoundColored.obj-14780679430cef95d018084f5b70d000.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

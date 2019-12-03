@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/roadCurved.obj-a550e47492d631365dff5c59a69219cb.mesh"
+
+[deps]
+
+files=[ "res://.import/roadCurved.obj-a550e47492d631365dff5c59a69219cb.mesh" ]
+
+source_file="res://Assets/Models/OBJ format/roadCurved.obj"
+dest_files=[ "res://.import/roadCurved.obj-a550e47492d631365dff5c59a69219cb.mesh", "res://.import/roadCurved.obj-a550e47492d631365dff5c59a69219cb.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

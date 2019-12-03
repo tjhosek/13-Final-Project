@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/grandStandRound.obj-5100541b01c788cbf7092118985e24a0.mesh"
+
+[deps]
+
+files=[ "res://.import/grandStandRound.obj-5100541b01c788cbf7092118985e24a0.mesh" ]
+
+source_file="res://Assets/Models/OBJ format/grandStandRound.obj"
+dest_files=[ "res://.import/grandStandRound.obj-5100541b01c788cbf7092118985e24a0.mesh", "res://.import/grandStandRound.obj-5100541b01c788cbf7092118985e24a0.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

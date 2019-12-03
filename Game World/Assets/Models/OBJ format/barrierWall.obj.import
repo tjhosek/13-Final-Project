@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/barrierWall.obj-446e29eb9009f4b754a264979c7e1a4a.mesh"
+
+[deps]
+
+files=[ "res://.import/barrierWall.obj-446e29eb9009f4b754a264979c7e1a4a.mesh" ]
+
+source_file="res://Assets/Models/OBJ format/barrierWall.obj"
+dest_files=[ "res://.import/barrierWall.obj-446e29eb9009f4b754a264979c7e1a4a.mesh", "res://.import/barrierWall.obj-446e29eb9009f4b754a264979c7e1a4a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

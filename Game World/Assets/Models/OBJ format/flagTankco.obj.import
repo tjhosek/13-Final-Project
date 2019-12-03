@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/flagTankco.obj-67168ad546c026c1b49b6ccd72658e8c.mesh"
+
+[deps]
+
+files=[ "res://.import/flagTankco.obj-67168ad546c026c1b49b6ccd72658e8c.mesh" ]
+
+source_file="res://Assets/Models/OBJ format/flagTankco.obj"
+dest_files=[ "res://.import/flagTankco.obj-67168ad546c026c1b49b6ccd72658e8c.mesh", "res://.import/flagTankco.obj-67168ad546c026c1b49b6ccd72658e8c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

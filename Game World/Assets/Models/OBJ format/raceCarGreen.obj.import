@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/raceCarGreen.obj-ba7952d51bd29952d2f454b7d5f9b11b.mesh"
+
+[deps]
+
+files=[ "res://.import/raceCarGreen.obj-ba7952d51bd29952d2f454b7d5f9b11b.mesh" ]
+
+source_file="res://Assets/Models/OBJ format/raceCarGreen.obj"
+dest_files=[ "res://.import/raceCarGreen.obj-ba7952d51bd29952d2f454b7d5f9b11b.mesh", "res://.import/raceCarGreen.obj-ba7952d51bd29952d2f454b7d5f9b11b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

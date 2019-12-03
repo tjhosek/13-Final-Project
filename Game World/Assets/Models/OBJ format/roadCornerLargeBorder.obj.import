@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/roadCornerLargeBorder.obj-e5b001d7a937625cdc28f042b51f3dbd.mesh"
+
+[deps]
+
+files=[ "res://.import/roadCornerLargeBorder.obj-e5b001d7a937625cdc28f042b51f3dbd.mesh" ]
+
+source_file="res://Assets/Models/OBJ format/roadCornerLargeBorder.obj"
+dest_files=[ "res://.import/roadCornerLargeBorder.obj-e5b001d7a937625cdc28f042b51f3dbd.mesh", "res://.import/roadCornerLargeBorder.obj-e5b001d7a937625cdc28f042b51f3dbd.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

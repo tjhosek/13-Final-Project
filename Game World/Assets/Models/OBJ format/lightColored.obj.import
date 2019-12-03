@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/lightColored.obj-4c19053c41e63cb796bf09c8341b7231.mesh"
+
+[deps]
+
+files=[ "res://.import/lightColored.obj-4c19053c41e63cb796bf09c8341b7231.mesh" ]
+
+source_file="res://Assets/Models/OBJ format/lightColored.obj"
+dest_files=[ "res://.import/lightColored.obj-4c19053c41e63cb796bf09c8341b7231.mesh", "res://.import/lightColored.obj-4c19053c41e63cb796bf09c8341b7231.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

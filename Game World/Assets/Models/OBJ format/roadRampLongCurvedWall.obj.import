@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/roadRampLongCurvedWall.obj-2b679842115665b4321c0afcd3b960da.mesh"
+
+[deps]
+
+files=[ "res://.import/roadRampLongCurvedWall.obj-2b679842115665b4321c0afcd3b960da.mesh" ]
+
+source_file="res://Assets/Models/OBJ format/roadRampLongCurvedWall.obj"
+dest_files=[ "res://.import/roadRampLongCurvedWall.obj-2b679842115665b4321c0afcd3b960da.mesh", "res://.import/roadRampLongCurvedWall.obj-2b679842115665b4321c0afcd3b960da.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

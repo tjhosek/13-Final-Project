@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/flagCheckersSmall.obj-797f687d8dd6cccd6ccaeb12da8f0a96.mesh"
+
+[deps]
+
+files=[ "res://.import/flagCheckersSmall.obj-797f687d8dd6cccd6ccaeb12da8f0a96.mesh" ]
+
+source_file="res://Assets/Models/OBJ format/flagCheckersSmall.obj"
+dest_files=[ "res://.import/flagCheckersSmall.obj-797f687d8dd6cccd6ccaeb12da8f0a96.mesh", "res://.import/flagCheckersSmall.obj-797f687d8dd6cccd6ccaeb12da8f0a96.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

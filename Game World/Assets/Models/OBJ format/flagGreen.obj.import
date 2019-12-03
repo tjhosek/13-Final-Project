@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/flagGreen.obj-182eb61a4427c053695c4caa4c70aa5a.mesh"
+
+[deps]
+
+files=[ "res://.import/flagGreen.obj-182eb61a4427c053695c4caa4c70aa5a.mesh" ]
+
+source_file="res://Assets/Models/OBJ format/flagGreen.obj"
+dest_files=[ "res://.import/flagGreen.obj-182eb61a4427c053695c4caa4c70aa5a.mesh", "res://.import/flagGreen.obj-182eb61a4427c053695c4caa4c70aa5a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

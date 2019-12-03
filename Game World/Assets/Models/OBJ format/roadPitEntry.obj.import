@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/roadPitEntry.obj-59948c57350a59b976217e84755a2f5c.mesh"
+
+[deps]
+
+files=[ "res://.import/roadPitEntry.obj-59948c57350a59b976217e84755a2f5c.mesh" ]
+
+source_file="res://Assets/Models/OBJ format/roadPitEntry.obj"
+dest_files=[ "res://.import/roadPitEntry.obj-59948c57350a59b976217e84755a2f5c.mesh", "res://.import/roadPitEntry.obj-59948c57350a59b976217e84755a2f5c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true
