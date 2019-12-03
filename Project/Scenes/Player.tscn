@@ -1,6 +1,8 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/InventorySpace.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/InventoryItem.tscn" type="PackedScene" id=3]
 
 [sub_resource type="CapsuleShape" id=1]
 radius = 0.5
@@ -52,17 +54,17 @@ current = true
 [node name="ColorRect" type="ColorRect" parent="Hud"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 450.0
-margin_right = 570.0
-margin_bottom = 40.0
+margin_top = 544.0
+margin_right = 112.0
+margin_bottom = 576.0
 color = Color( 0, 0, 0, 0.572549 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Title" type="Label" parent="Hud/ColorRect"]
-margin_right = 120.0
-margin_bottom = 40.0
+margin_right = 112.0
+margin_bottom = 32.0
 text = "Inventory"
 align = 1
 valign = 1
@@ -124,7 +126,55 @@ text = "Health:"
 align = 1
 valign = 1
 
-[node name="Inventory" type="Node" parent="Hud"]
+[node name="Hotbar" type="Node" parent="Hud"]
+
+[node name="InventorySpace" parent="Hud/Hotbar" instance=ExtResource( 2 )]
+position = Vector2( 864, 560 )
+
+[node name="InventorySpace2" parent="Hud/Hotbar" instance=ExtResource( 2 )]
+position = Vector2( 800, 560 )
+
+[node name="InventorySpace3" parent="Hud/Hotbar" instance=ExtResource( 2 )]
+position = Vector2( 736, 560 )
+
+[node name="InventorySpace4" parent="Hud/Hotbar" instance=ExtResource( 2 )]
+position = Vector2( 672, 560 )
+
+[node name="InventorySpace5" parent="Hud/Hotbar" instance=ExtResource( 2 )]
+position = Vector2( 608, 560 )
+
+[node name="InventorySpace6" parent="Hud/Hotbar" instance=ExtResource( 2 )]
+position = Vector2( 544, 560 )
+
+[node name="InventorySpace7" parent="Hud/Hotbar" instance=ExtResource( 2 )]
+position = Vector2( 480, 560 )
+
+[node name="InventorySpace8" parent="Hud/Hotbar" instance=ExtResource( 2 )]
+position = Vector2( 416, 560 )
+
+[node name="InventorySpace9" parent="Hud/Hotbar" instance=ExtResource( 2 )]
+position = Vector2( 352, 560 )
+
+[node name="InventorySpace10" parent="Hud/Hotbar" instance=ExtResource( 2 )]
+position = Vector2( 288, 560 )
+
+[node name="InventorySpace11" parent="Hud/Hotbar" instance=ExtResource( 2 )]
+position = Vector2( 224, 560 )
+
+[node name="InventorySpace12" parent="Hud/Hotbar" instance=ExtResource( 2 )]
+position = Vector2( 160, 560 )
+
+[node name="InventoryItem" parent="Hud/Hotbar" instance=ExtResource( 3 )]
+position = Vector2( 112, 368 )
+
+[node name="InventoryItem2" parent="Hud/Hotbar" instance=ExtResource( 3 )]
+position = Vector2( 880, 448 )
+
+[node name="InventoryItem3" parent="Hud/Hotbar" instance=ExtResource( 3 )]
+position = Vector2( 400, 348 )
+
+[node name="InventoryItem4" parent="Hud/Hotbar" instance=ExtResource( 3 )]
+position = Vector2( 596, 352 )
 
 [node name="AttributeTimer" type="Timer" parent="."]
 process_mode = 0
