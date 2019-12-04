@@ -26,7 +26,7 @@ func _physics_process(delta):
 		dragged = true
 	elif dragged or not last_holder:
 		last_holder = get_closest_item_holder()
-		last_holder.set_occupied(true)
+		last_holder.set_occupied(true,name)
 		last_holder.set_last_held(self)
 		position = last_holder.position
 		dragged = false
@@ -55,6 +55,7 @@ func transfer_to_world(pos):
 	var item = world_item
 	item.translation = pos
 	item.inventory_item = clone()
+	item.name = name
 	item.get_node('Sprite3D').texture = $Sprite.texture
 	get_tree().current_scene.add_child(item)
 	queue_free()

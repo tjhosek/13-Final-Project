@@ -49,7 +49,7 @@ material_override = SubResource( 2 )
 texture = ExtResource( 2 )
 
 [node name="Pointer" type="Sprite3D" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.48088, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.20642, 0 )
 visible = false
 material_override = SubResource( 3 )
 texture = ExtResource( 3 )

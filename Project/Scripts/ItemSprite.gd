@@ -2,10 +2,11 @@ extends RigidBody
 
 var inventory_item = null
 var copy = null
-export var inventory_item_name = ''
+export var sprite = preload("res://Assets/Colored/genericItem_color_153.png")
 var in_player_range = false
 
 func _ready():
+	$Sprite3D.texture = sprite
 	copy = load("res://Scenes/ItemSprite.tscn")
 	inventory_item = load("res://Scenes/InventoryItem.tscn").instance()
 	
@@ -21,6 +22,7 @@ func set_in_player_range():
 
 func transfer_to_hotbar():
 	var inv_item = inventory_item
+	inv_item.name = name
 	inv_item.world_item = clone()
 	inv_item.sprite = $Sprite3D.texture
 	get_parent().get_node('Player/Hud/Hotbar').add_child(inv_item)

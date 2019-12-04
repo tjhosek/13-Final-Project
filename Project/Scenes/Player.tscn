@@ -144,7 +144,6 @@ align = 1
 valign = 1
 
 [node name="Hotbar" type="Node" parent="Hud"]
-editor/display_folded = true
 
 [node name="InventorySpace" parent="Hud/Hotbar" instance=ExtResource( 2 )]
 position = Vector2( 864, 560 )
@@ -182,19 +181,19 @@ position = Vector2( 224, 560 )
 [node name="InventorySpace12" parent="Hud/Hotbar" instance=ExtResource( 2 )]
 position = Vector2( 160, 560 )
 
-[node name="InventoryItem" parent="Hud/Hotbar" instance=ExtResource( 3 )]
+[node name="Wrench" parent="Hud/Hotbar" instance=ExtResource( 3 )]
 position = Vector2( 112, 368 )
 sprite = ExtResource( 4 )
 
-[node name="InventoryItem2" parent="Hud/Hotbar" instance=ExtResource( 3 )]
+[node name="PDA" parent="Hud/Hotbar" instance=ExtResource( 3 )]
 position = Vector2( 880, 448 )
 sprite = ExtResource( 5 )
 
-[node name="InventoryItem3" parent="Hud/Hotbar" instance=ExtResource( 3 )]
+[node name="First Aid Kit" parent="Hud/Hotbar" instance=ExtResource( 3 )]
 position = Vector2( 400, 348 )
 sprite = ExtResource( 6 )
 
-[node name="InventoryItem4" parent="Hud/Hotbar" instance=ExtResource( 3 )]
+[node name="Frying Pan" parent="Hud/Hotbar" instance=ExtResource( 3 )]
 position = Vector2( 596, 352 )
 sprite = ExtResource( 7 )
 
