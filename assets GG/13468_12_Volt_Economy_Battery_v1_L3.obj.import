@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/13468_12_Volt_Economy_Battery_v1_L3.obj-1419ec73036fb36c87fffb6daab1875f.mesh"
+
+[deps]
+
+files=[ "res://.import/13468_12_Volt_Economy_Battery_v1_L3.obj-1419ec73036fb36c87fffb6daab1875f.mesh" ]
+
+source_file="res://assets GG/13468_12_Volt_Economy_Battery_v1_L3.obj"
+dest_files=[ "res://.import/13468_12_Volt_Economy_Battery_v1_L3.obj-1419ec73036fb36c87fffb6daab1875f.mesh", "res://.import/13468_12_Volt_Economy_Battery_v1_L3.obj-1419ec73036fb36c87fffb6daab1875f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

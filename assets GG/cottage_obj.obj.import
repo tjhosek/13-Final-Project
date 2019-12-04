@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/cottage_obj.obj-ce47bed793c5aa836a83ee8703fca5ae.mesh"
+
+[deps]
+
+files=[ "res://.import/cottage_obj.obj-ce47bed793c5aa836a83ee8703fca5ae.mesh" ]
+
+source_file="res://assets GG/cottage_obj.obj"
+dest_files=[ "res://.import/cottage_obj.obj-ce47bed793c5aa836a83ee8703fca5ae.mesh", "res://.import/cottage_obj.obj-ce47bed793c5aa836a83ee8703fca5ae.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/snow_detail_crystalLarge.png-251e8a91e6fa9438f74cc669ea4cf472.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Game World/Assets/NATURE PACK/Side/snow_detail_crystalLarge.png"
+dest_files=[ "res://.import/snow_detail_crystalLarge.png-251e8a91e6fa9438f74cc669ea4cf472.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
