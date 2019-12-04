@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Road.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Dirt Block.tscn" type="PackedScene" id=2]
@@ -18,6 +18,16 @@ albedo_color = Color( 0.752941, 0.65098, 0.34902, 1 )
 
 [sub_resource type="ConvexPolygonShape" id=3]
 
+[sub_resource type="ProceduralSky" id=5]
+sky_top_color = Color( 0.886275, 0.654902, 0.160784, 1 )
+sky_horizon_color = Color( 0.996078, 0.235294, 0.341176, 1 )
+ground_bottom_color = Color( 0.329412, 0.262745, 0.0352941, 1 )
+ground_horizon_color = Color( 0.662745, 0.486275, 0.337255, 1 )
+
+[sub_resource type="Environment" id=4]
+background_mode = 2
+background_sky = SubResource( 5 )
+
 [node name="World" type="Spatial"]
 
 [node name="Ground" type="StaticBody" parent="."]
@@ -31,7 +41,7 @@ material/0 = SubResource( 2 )
 shape = SubResource( 3 )
 
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
-transform = Transform( 0.00883839, 0.45567, -0.890105, -0.0185625, 0.890061, 0.455463, 0.999789, 0.0124971, 0.0163251, -8, 3, 0 )
+transform = Transform( 0.00618177, 0.574574, -0.818429, -0.0196079, 0.818357, 0.574375, 0.999789, 0.0124971, 0.0163251, -8, 3, 0 )
 
 [node name="Roads" type="Node" parent="."]
 editor/display_folded = true
@@ -266,3 +276,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.69006, 0.739116, -2.95104 )
 
 [node name="DummyCamera(DELETE LATER)" type="Camera" parent="."]
 transform = Transform( 0.019153, 0.0862139, -0.996093, -0.00165744, 0.996277, 0.0861979, 0.999815, 2.01436e-008, 0.0192246, -6.9599, 0.853806, 0 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 4 )
