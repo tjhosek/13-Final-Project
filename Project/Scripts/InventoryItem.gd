@@ -56,7 +56,7 @@ func transfer_to_world(pos):
 	item.translation = pos
 	item.inventory_item = clone()
 	item.name = name
-	item.get_node('Sprite3D').texture = $Sprite.texture
+	item.sprite = $Sprite.texture
 	get_tree().current_scene.add_child(item)
 	queue_free()
 

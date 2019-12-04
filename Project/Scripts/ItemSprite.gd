@@ -24,7 +24,7 @@ func transfer_to_hotbar():
 	var inv_item = inventory_item
 	inv_item.name = name
 	inv_item.world_item = clone()
-	inv_item.sprite = $Sprite3D.texture
+	inv_item.sprite = sprite
 	get_parent().get_node('Player/Hud/Hotbar').add_child(inv_item)
 	queue_free()
 	

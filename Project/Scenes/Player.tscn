@@ -186,15 +186,15 @@ position = Vector2( 112, 368 )
 sprite = ExtResource( 4 )
 
 [node name="PDA" parent="Hud/Hotbar" instance=ExtResource( 3 )]
-position = Vector2( 880, 448 )
+position = Vector2( 118.875, 416 )
 sprite = ExtResource( 5 )
 
 [node name="First Aid Kit" parent="Hud/Hotbar" instance=ExtResource( 3 )]
-position = Vector2( 400, 348 )
+position = Vector2( 128, 304 )
 sprite = ExtResource( 6 )
 
 [node name="Frying Pan" parent="Hud/Hotbar" instance=ExtResource( 3 )]
-position = Vector2( 596, 352 )
+position = Vector2( 48, 416 )
 sprite = ExtResource( 7 )
 
 [node name="Dropoff" type="Area2D" parent="Hud" groups=[
