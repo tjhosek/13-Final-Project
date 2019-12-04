@@ -1,7 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Road.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Dirt Block.tscn" type="PackedScene" id=2]
+[ext_resource path="res://RocksBig.tscn" type="PackedScene" id=3]
+[ext_resource path="res://RocksSmall.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Tree.tscn" type="PackedScene" id=5]
 
 [sub_resource type="PlaneMesh" id=1]
 
@@ -24,7 +27,7 @@ material/0 = SubResource( 2 )
 shape = SubResource( 3 )
 
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
-transform = Transform( 0.0858317, 0.173648, -0.98106, -0.0151344, 0.984808, 0.172987, 0.996195, -9.34826e-010, 0.0871558, -8, 3, 0 )
+transform = Transform( 0.0104731, 0.373718, -0.927483, -0.0176918, 0.927458, 0.373508, 0.999789, 0.0124971, 0.0163251, -8, 3, 0 )
 
 [node name="Roads" type="Node" parent="."]
 editor/display_folded = true
@@ -45,6 +48,7 @@ transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 1.005
 transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 3.00554, -0.04, 0 )
 
 [node name="Dirt Blocks" type="Node" parent="."]
+editor/display_folded = true
 
 [node name="Dirt Block" parent="Dirt Blocks" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 0.2, 0, 0, 0, 1, -5.49335, 0, -1.49425 )
@@ -189,3 +193,56 @@ transform = Transform( 1, 0, 0, 0, 0.2, 0, 0, 0, 1, -4.50349, 0, 0.892629 )
 
 [node name="Dirt Block48" parent="Dirt Blocks" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 0.2, 0, 0, 0, 1, -4.50349, 0, -0.869574 )
+
+[node name="Rocks" type="Node" parent="."]
+editor/display_folded = true
+
+[node name="RocksBig" parent="Rocks" instance=ExtResource( 3 )]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.912505, 0, -0.809526 )
+
+[node name="RocksBig2" parent="Rocks" instance=ExtResource( 3 )]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.414752, 0, 1.43162 )
+
+[node name="RocksBig3" parent="Rocks" instance=ExtResource( 3 )]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -4.16256, 0, -1.49555 )
+
+[node name="RocksSmall" parent="Rocks" instance=ExtResource( 4 )]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -2.72499, 0, 0.740242 )
+
+[node name="RocksSmall2" parent="Rocks" instance=ExtResource( 4 )]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.955595, 0, -1.22994 )
+
+[node name="RocksSmall3" parent="Rocks" instance=ExtResource( 4 )]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 3.30245, 0, 1.5209 )
+
+[node name="RocksSmall4" parent="Rocks" instance=ExtResource( 4 )]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -3.12037, 0, 1.23299 )
+
+[node name="RocksSmall5" parent="Rocks" instance=ExtResource( 4 )]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -5.2408, 0, -1.64124 )
+
+[node name="Trees" type="Node" parent="."]
+
+[node name="Tree" parent="Trees" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.49577 )
+
+[node name="Tree2" parent="Trees" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.76426 )
+
+[node name="Tree3" parent="Trees" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.73097, 0, 0.583622 )
+
+[node name="Tree4" parent="Trees" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.13037, 0, -0.948225 )
+
+[node name="Tree5" parent="Trees" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.59786, 0, -0.948225 )
+
+[node name="Tree6" parent="Trees" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37956, 0, 1.1181 )
+
+[node name="Tree7" parent="Trees" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.50045, 0, -0.841153 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 0.0168711, 0.479429, -0.877419, -0.00921683, 0.877581, 0.47934, 0.999815, 0, 0.0192246, -6.77568, 1.46596, 0 )
