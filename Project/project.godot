@@ -15,8 +15,10 @@ _global_script_class_icons={
 
 [application]
 
+
 config/name="Dust"
 run/main_scene="res://Scenes/TestWorld.tscn"
+
 config/icon="res://icon.png"
 
 [input]
