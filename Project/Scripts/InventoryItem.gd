@@ -12,7 +12,7 @@ var copy = null
 
 func _ready():
 	$Sprite.texture = sprite
-	world_item = load("res://Scenes/Item.tscn")
+	world_item = load("res://Scenes/ItemSprite.tscn").instance()
 	copy = load("res://Scenes/InventoryItem.tscn")
 	player = get_tree().get_nodes_in_group('Player')[0]
 	
@@ -52,9 +52,10 @@ func get_closest_item_holder():
 	return closest_holder
 	
 func transfer_to_world(pos):
-	var item = world_item.instance()
+	var item = world_item
 	item.translation = pos
 	item.inventory_item = clone()
+	item.get_node('Sprite3D').texture = $Sprite.texture
 	get_tree().current_scene.add_child(item)
 	queue_free()
 

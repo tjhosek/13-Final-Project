@@ -5,12 +5,13 @@ var copy = null
 export var inventory_item_name = ''
 
 func _ready():
-	copy = load("res://Scenes/Item.tscn")
+	copy = load("res://Scenes/ItemSprite.tscn")
 	inventory_item = load("res://Scenes/InventoryItem.tscn").instance()
 
 func transfer_to_hotbar():
 	var inv_item = inventory_item
 	inv_item.world_item = clone()
+	inv_item.sprite = $Sprite3D.texture
 	get_parent().get_node('Player/Hud/Hotbar').add_child(inv_item)
 	queue_free()
 	
