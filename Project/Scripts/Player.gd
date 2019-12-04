@@ -113,12 +113,16 @@ func get_input():
 		collider = result['collider']
 	if Input.is_action_pressed("move_up"):
 		velocity -= transform.basis.z*speed
+		$MeshHolder.rotation_degrees = Vector3(0,0,0)
 	if Input.is_action_pressed("move_down"):
 		velocity += transform.basis.z*speed
+		$MeshHolder.rotation_degrees = Vector3(0,180,0)
 	if Input.is_action_pressed("move_left"):
 		velocity -= transform.basis.x*speed
+		$MeshHolder.rotation_degrees = Vector3(0,90,0)
 	if Input.is_action_pressed("move_right"):
 		velocity += transform.basis.x*speed
+		$MeshHolder.rotation_degrees = Vector3(0,-90,0)
 	velocity.y = vy
 	jump = false
 	if Input.is_action_just_pressed("jump"):
@@ -132,21 +136,3 @@ func get_input():
 	if Input.is_action_just_pressed("right_click") and collider:
 		if collider.is_in_group('takeable'):
 			print(result['collider'].in_player_range)
-
-		
-func _unhandled_input(event):
-#	if event is InputEventMouseMotion and space_state:	
-#		if result:
-#			print(result['position'],translation)
-#			var dir = translation.angle_to(result['position'])
-#			$MeshHolder.rotation.y = diar
-	pass
-
-func _on_Pickup_body_entered(body):
-	if body.is_in_group('takeable'):
-		body.set_in_player_range(true)
-
-
-func _on_Pickup_body_exited(body):
-	if body.is_in_group('takeable'):
-		body.set_in_player_range(false)

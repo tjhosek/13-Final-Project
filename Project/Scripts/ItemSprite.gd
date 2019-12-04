@@ -9,8 +9,15 @@ func _ready():
 	copy = load("res://Scenes/ItemSprite.tscn")
 	inventory_item = load("res://Scenes/InventoryItem.tscn").instance()
 	
-func set_in_player_range(value):
-	in_player_range = value
+func _physics_process(delta):
+	set_in_player_range()
+	
+func set_in_player_range():
+#	in_player_range = value
+	if get_parent().get_node('Player').translation.distance_to(translation)<4:
+		$Pointer.visible = true
+	else:
+		$Pointer.visible = false
 
 func transfer_to_hotbar():
 	var inv_item = inventory_item
