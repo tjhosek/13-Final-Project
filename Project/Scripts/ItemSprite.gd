@@ -3,10 +3,14 @@ extends RigidBody
 var inventory_item = null
 var copy = null
 export var inventory_item_name = ''
+var in_player_range = false
 
 func _ready():
 	copy = load("res://Scenes/ItemSprite.tscn")
 	inventory_item = load("res://Scenes/InventoryItem.tscn").instance()
+	
+func set_in_player_range(value):
+	in_player_range = value
 
 func transfer_to_hotbar():
 	var inv_item = inventory_item

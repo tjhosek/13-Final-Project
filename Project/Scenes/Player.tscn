@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/InventorySpace.tscn" type="PackedScene" id=2]
@@ -27,6 +27,10 @@ albedo_color = Color( 0.196078, 1, 0, 1 )
 
 [sub_resource type="CircleShape2D" id=7]
 radius = 64.0
+
+[sub_resource type="CylinderShape" id=8]
+radius = 2.5
+height = 3.0
 
 [node name="Player" type="KinematicBody" groups=[
 "Player",
@@ -197,7 +201,7 @@ sprite = ExtResource( 7 )
 [node name="Dropoff" type="Area2D" parent="Hud" groups=[
 "Transfer",
 ]]
-position = Vector2( 512, 288 )
+position = Vector2( 512, 304 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -209,3 +213,14 @@ shape = SubResource( 7 )
 process_mode = 0
 one_shot = true
 autostart = true
+
+[node name="Pickup" type="Area" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Pickup"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0 )
+shape = SubResource( 8 )
+[connection signal="area_entered" from="Pickup" to="." method="_on_Pickup_area_entered"]
+[connection signal="area_exited" from="Pickup" to="." method="_on_Pickup_area_exited"]
+[connection signal="body_entered" from="Pickup" to="." method="_on_Pickup_body_entered"]
+[connection signal="body_exited" from="Pickup" to="." method="_on_Pickup_body_exited"]

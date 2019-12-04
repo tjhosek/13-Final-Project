@@ -108,6 +108,9 @@ func _process(delta):
 func get_input():
 	var vy = velocity.y
 	velocity = Vector3()
+	var collider = null
+	if result:
+		collider = result['collider']
 	if Input.is_action_pressed("move_up"):
 		velocity -= transform.basis.z*speed
 	if Input.is_action_pressed("move_down"):
@@ -120,14 +123,15 @@ func get_input():
 	jump = false
 	if Input.is_action_just_pressed("jump"):
 		jump = true
-	if Input.is_action_just_pressed("left_click"):
+	if Input.is_action_just_pressed("left_click") and collider:
 		print(result['position'])
-		if result['collider'] in get_tree().get_nodes_in_group('takeable'):
-			print('success')
-			result['collider'].transfer_to_hotbar()
-	if Input.is_action_just_pressed("right_click"):
-		if result['collider'] in get_tree().get_nodes_in_group('takeable'):
-			print(result['collider'].inventory_item)
+		if collider in get_tree().get_nodes_in_group('takeable'):
+			if collider.translation.distance_to(self.translation) < 4:
+				print('success')
+				collider.transfer_to_hotbar()
+	if Input.is_action_just_pressed("right_click") and collider:
+		if collider.is_in_group('takeable'):
+			print(result['collider'].in_player_range)
 
 		
 func _unhandled_input(event):
@@ -137,3 +141,12 @@ func _unhandled_input(event):
 #			var dir = translation.angle_to(result['position'])
 #			$MeshHolder.rotation.y = diar
 	pass
+
+func _on_Pickup_body_entered(body):
+	if body.is_in_group('takeable'):
+		body.set_in_player_range(true)
+
+
+func _on_Pickup_body_exited(body):
+	if body.is_in_group('takeable'):
+		body.set_in_player_range(false)
