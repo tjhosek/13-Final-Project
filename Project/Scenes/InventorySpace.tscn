@@ -1,10 +1,11 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Scenes/InventorySpace.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/InventorySpace.gd" type="Script" id=1]
 
 [node name="InventorySpace" type="Node2D" groups=[
 "Inventory Item Holder",
 ]]
+script = ExtResource( 1 )
 
 [node name="OuterRect" type="ColorRect" parent="."]
 margin_left = -16.0
@@ -12,7 +13,6 @@ margin_top = -16.0
 margin_right = 16.0
 margin_bottom = 16.0
 color = Color( 0, 0, 0, 0.572549 )
-script = ExtResource( 1 )
 
 [node name="InnerRect" type="ColorRect" parent="."]
 margin_left = -12.0
@@ -20,3 +20,11 @@ margin_top = -12.0
 margin_right = 12.0
 margin_bottom = 12.0
 color = Color( 0.4, 0.4, 0.4, 0.572549 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = -20.0
+margin_top = -28.0
+margin_right = 20.0
+margin_bottom = -14.0
+text = "n/a"
+align = 1

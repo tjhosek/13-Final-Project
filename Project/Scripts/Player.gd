@@ -121,7 +121,14 @@ func get_input():
 	if Input.is_action_just_pressed("jump"):
 		jump = true
 	if Input.is_action_just_pressed("left_click"):
-		print(hp,hunger,thirst)
+		print(result['position'])
+		if result['collider'] in get_tree().get_nodes_in_group('takeable'):
+			print('success')
+			result['collider'].transfer_to_hotbar()
+	if Input.is_action_just_pressed("right_click"):
+		if result['collider'] in get_tree().get_nodes_in_group('takeable'):
+			print(result['collider'].inventory_item)
+
 		
 func _unhandled_input(event):
 #	if event is InputEventMouseMotion and space_state:	

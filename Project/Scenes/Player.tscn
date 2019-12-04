@@ -1,8 +1,12 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/InventorySpace.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/InventoryItem.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/Colored/genericItem_color_004.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Colored/genericItem_color_071.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Colored/genericItem_color_102.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Colored/genericItem_color_116.png" type="Texture" id=7]
 
 [sub_resource type="CapsuleShape" id=1]
 radius = 0.5
@@ -21,7 +25,12 @@ size = Vector3( 0.5, 0.5, 0.1 )
 [sub_resource type="SpatialMaterial" id=6]
 albedo_color = Color( 0.196078, 1, 0, 1 )
 
-[node name="Player" type="KinematicBody"]
+[sub_resource type="CircleShape2D" id=7]
+radius = 64.0
+
+[node name="Player" type="KinematicBody" groups=[
+"Player",
+]]
 collision_layer = 2
 script = ExtResource( 1 )
 
@@ -52,6 +61,7 @@ current = true
 [node name="Hud" type="Node2D" parent="."]
 
 [node name="ColorRect" type="ColorRect" parent="Hud"]
+editor/display_folded = true
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 544.0
@@ -70,6 +80,7 @@ align = 1
 valign = 1
 
 [node name="ColorRect2" type="ColorRect" parent="Hud"]
+editor/display_folded = true
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = -0.579712
@@ -89,6 +100,7 @@ align = 1
 valign = 1
 
 [node name="ColorRect3" type="ColorRect" parent="Hud"]
+editor/display_folded = true
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = -0.579712
@@ -108,6 +120,7 @@ align = 1
 valign = 1
 
 [node name="ColorRect4" type="ColorRect" parent="Hud"]
+editor/display_folded = true
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = -0.579712
@@ -127,6 +140,7 @@ align = 1
 valign = 1
 
 [node name="Hotbar" type="Node" parent="Hud"]
+editor/display_folded = true
 
 [node name="InventorySpace" parent="Hud/Hotbar" instance=ExtResource( 2 )]
 position = Vector2( 864, 560 )
@@ -166,15 +180,30 @@ position = Vector2( 160, 560 )
 
 [node name="InventoryItem" parent="Hud/Hotbar" instance=ExtResource( 3 )]
 position = Vector2( 112, 368 )
+sprite = ExtResource( 4 )
 
 [node name="InventoryItem2" parent="Hud/Hotbar" instance=ExtResource( 3 )]
 position = Vector2( 880, 448 )
+sprite = ExtResource( 5 )
 
 [node name="InventoryItem3" parent="Hud/Hotbar" instance=ExtResource( 3 )]
 position = Vector2( 400, 348 )
+sprite = ExtResource( 6 )
 
 [node name="InventoryItem4" parent="Hud/Hotbar" instance=ExtResource( 3 )]
 position = Vector2( 596, 352 )
+sprite = ExtResource( 7 )
+
+[node name="Dropoff" type="Area2D" parent="Hud" groups=[
+"Transfer",
+]]
+position = Vector2( 512, 288 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hud/Dropoff"]
+shape = SubResource( 7 )
 
 [node name="AttributeTimer" type="Timer" parent="."]
 process_mode = 0
