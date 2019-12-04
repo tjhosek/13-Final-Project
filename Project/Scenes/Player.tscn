@@ -1,0 +1,225 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/InventorySpace.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/InventoryItem.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/Colored/genericItem_color_004.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Colored/genericItem_color_071.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Colored/genericItem_color_102.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Colored/genericItem_color_116.png" type="Texture" id=7]
+
+[sub_resource type="CapsuleShape" id=1]
+radius = 0.5
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 0.5, 0.1, 0.5 )
+
+[sub_resource type="CapsuleMesh" id=3]
+radius = 0.5
+
+[sub_resource type="SpatialMaterial" id=4]
+
+[sub_resource type="PrismMesh" id=5]
+size = Vector3( 0.5, 0.5, 0.1 )
+
+[sub_resource type="SpatialMaterial" id=6]
+albedo_color = Color( 0.196078, 1, 0, 1 )
+
+[sub_resource type="CircleShape2D" id=7]
+radius = 64.0
+
+[sub_resource type="CylinderShape" id=8]
+radius = 2.5
+height = 3.0
+
+[node name="Player" type="KinematicBody" groups=[
+"Player",
+]]
+collision_layer = 2
+script = ExtResource( 1 )
+
+[node name="Body" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-008, -1, 0, 1, -4.37114e-008, 0, 1, 0 )
+shape = SubResource( 1 )
+
+[node name="Feet" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.203143, 0 )
+shape = SubResource( 2 )
+
+[node name="MeshHolder" type="Spatial" parent="."]
+
+[node name="MeshInstance" type="MeshInstance" parent="MeshHolder"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-008, -1, 0, 1, -4.37114e-008, 0, 1, 0 )
+mesh = SubResource( 3 )
+material/0 = SubResource( 4 )
+
+[node name="pointer" type="MeshInstance" parent="MeshHolder"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-008, 1, 0, -1, -4.37114e-008, 0, 1.99391, -0.37093 )
+mesh = SubResource( 5 )
+material/0 = SubResource( 6 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.642788, 0.766044, 0, -0.766044, 0.642788, 0, 7.53209, 5.28557 )
+current = true
+
+[node name="Hud" type="Node2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Hud"]
+editor/display_folded = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 544.0
+margin_right = 112.0
+margin_bottom = 576.0
+color = Color( 0, 0, 0, 0.572549 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Title" type="Label" parent="Hud/ColorRect"]
+margin_right = 112.0
+margin_bottom = 32.0
+text = "Inventory"
+align = 1
+valign = 1
+
+[node name="ColorRect2" type="ColorRect" parent="Hud"]
+editor/display_folded = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -0.579712
+margin_top = 230.0
+margin_right = 119.42
+margin_bottom = 270.0
+color = Color( 0, 0, 0, 0.572549 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Thirst" type="Label" parent="Hud/ColorRect2"]
+margin_right = 120.0
+margin_bottom = 40.0
+text = "Thirst"
+align = 1
+valign = 1
+
+[node name="ColorRect3" type="ColorRect" parent="Hud"]
+editor/display_folded = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -0.579712
+margin_top = 160.0
+margin_right = 119.42
+margin_bottom = 200.0
+color = Color( 0, 0, 0, 0.572549 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Hunger" type="Label" parent="Hud/ColorRect3"]
+margin_right = 120.0
+margin_bottom = 40.0
+text = "Hunger"
+align = 1
+valign = 1
+
+[node name="ColorRect4" type="ColorRect" parent="Hud"]
+editor/display_folded = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -0.579712
+margin_top = 87.1694
+margin_right = 119.42
+margin_bottom = 127.169
+color = Color( 0, 0, 0, 0.572549 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Health" type="Label" parent="Hud/ColorRect4"]
+margin_right = 120.0
+margin_bottom = 40.0
+text = "Health:"
+align = 1
+valign = 1
+
+[node name="Hotbar" type="Node" parent="Hud"]
+
+[node name="InventorySpace" parent="Hud/Hotbar" instance=ExtResource( 2 )]
+position = Vector2( 864, 560 )
+
+[node name="InventorySpace2" parent="Hud/Hotbar" instance=ExtResource( 2 )]
+position = Vector2( 800, 560 )
+
+[node name="InventorySpace3" parent="Hud/Hotbar" instance=ExtResource( 2 )]
+position = Vector2( 736, 560 )
+
+[node name="InventorySpace4" parent="Hud/Hotbar" instance=ExtResource( 2 )]
+position = Vector2( 672, 560 )
+
+[node name="InventorySpace5" parent="Hud/Hotbar" instance=ExtResource( 2 )]
+position = Vector2( 608, 560 )
+
+[node name="InventorySpace6" parent="Hud/Hotbar" instance=ExtResource( 2 )]
+position = Vector2( 544, 560 )
+
+[node name="InventorySpace7" parent="Hud/Hotbar" instance=ExtResource( 2 )]
+position = Vector2( 480, 560 )
+
+[node name="InventorySpace8" parent="Hud/Hotbar" instance=ExtResource( 2 )]
+position = Vector2( 416, 560 )
+
+[node name="InventorySpace9" parent="Hud/Hotbar" instance=ExtResource( 2 )]
+position = Vector2( 352, 560 )
+
+[node name="InventorySpace10" parent="Hud/Hotbar" instance=ExtResource( 2 )]
+position = Vector2( 288, 560 )
+
+[node name="InventorySpace11" parent="Hud/Hotbar" instance=ExtResource( 2 )]
+position = Vector2( 224, 560 )
+
+[node name="InventorySpace12" parent="Hud/Hotbar" instance=ExtResource( 2 )]
+position = Vector2( 160, 560 )
+
+[node name="Wrench" parent="Hud/Hotbar" instance=ExtResource( 3 )]
+position = Vector2( 112, 368 )
+sprite = ExtResource( 4 )
+
+[node name="PDA" parent="Hud/Hotbar" instance=ExtResource( 3 )]
+position = Vector2( 118.875, 416 )
+sprite = ExtResource( 5 )
+
+[node name="First Aid Kit" parent="Hud/Hotbar" instance=ExtResource( 3 )]
+position = Vector2( 128, 304 )
+sprite = ExtResource( 6 )
+
+[node name="Frying Pan" parent="Hud/Hotbar" instance=ExtResource( 3 )]
+position = Vector2( 48, 416 )
+sprite = ExtResource( 7 )
+
+[node name="Dropoff" type="Area2D" parent="Hud" groups=[
+"Transfer",
+]]
+position = Vector2( 512, 304 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hud/Dropoff"]
+shape = SubResource( 7 )
+
+[node name="AttributeTimer" type="Timer" parent="."]
+process_mode = 0
+one_shot = true
+autostart = true
+
+[node name="Pickup" type="Area" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Pickup"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0 )
+shape = SubResource( 8 )
+[connection signal="area_entered" from="Pickup" to="." method="_on_Pickup_area_entered"]
+[connection signal="area_exited" from="Pickup" to="." method="_on_Pickup_area_exited"]
+[connection signal="body_entered" from="Pickup" to="." method="_on_Pickup_body_entered"]
+[connection signal="body_exited" from="Pickup" to="." method="_on_Pickup_body_exited"]
