@@ -78,11 +78,11 @@ func _physics_process(delta):
 		velocity.y = jump_speed
 		
 	# Updating values
-	if attribute_timer.is_stopped():
-		hp += base_hp_regen*hp_mod
-		hunger += base_hunger_rate*hunger_mod
-		thirst += base_thirst_rate*thirst_mod
-		attribute_timer.start()
+#	if attribute_timer.is_stopped():
+#		hp += base_hp_regen*hp_mod
+#		hunger += base_hunger_rate*hunger_mod
+#		thirst += base_thirst_rate*thirst_mod
+#		attribute_timer.start()
 		
 	if hp > 100:
 		hp = 100
@@ -98,9 +98,9 @@ func _physics_process(delta):
 		thirst = 0
 	
 	# Updating HUD
-	hp_label.text = 'Health: '+str(int(hp))
-	hunger_label.text = 'Hunger: '+str(int(hunger))
-	thirst_label.text = 'Thirst: '+str(int(thirst))
+#	hp_label.text = 'Health: '+str(int(hp))
+#	hunger_label.text = 'Hunger: '+str(int(hunger))
+#	thirst_label.text = 'Thirst: '+str(int(thirst))
 		
 func _process(delta):
 	pass

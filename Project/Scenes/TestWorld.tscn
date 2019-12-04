@@ -44,8 +44,6 @@ sprite = ExtResource( 3 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 4 )
 accepts = "Computer Parts"
 affects = "TestCube"
-property = "translation.y"
-value = 10
 
 [node name="TestCube" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 2, -3 )

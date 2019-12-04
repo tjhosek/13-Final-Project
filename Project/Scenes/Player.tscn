@@ -85,6 +85,7 @@ valign = 1
 
 [node name="ColorRect2" type="ColorRect" parent="Hud"]
 editor/display_folded = true
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = -0.579712
@@ -105,6 +106,7 @@ valign = 1
 
 [node name="ColorRect3" type="ColorRect" parent="Hud"]
 editor/display_folded = true
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = -0.579712
@@ -125,6 +127,7 @@ valign = 1
 
 [node name="ColorRect4" type="ColorRect" parent="Hud"]
 editor/display_folded = true
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = -0.579712
