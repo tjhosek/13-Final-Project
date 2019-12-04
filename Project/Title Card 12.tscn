@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Title Card 2.tscn" type="PackedScene" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Node2D" parent="." instance=ExtResource( 1 )]
+
+[node name="TextEdit" parent="Node2D" index="1"]
+text = "The entrance to this house is blocked off by some foreign obstruction. 
+You bash your shoulder against the door a half dozen times before you give up 
+and look for an alternative entrance. Around the back, there’s a side door that you find 
+fully ajar. Inside of the house, there is no furniture and no stairs going up or down; 
+there is only drawings all along the walls and floor, reading one phrase over and over. 
+
+
+I’ve gone blind
+
+
+That phrase coats every square inch of the home, and now every inch of your brain. 
+Overwhelmed, you continue your journey to the car.
+"
+
+[editable path="Node2D"]
